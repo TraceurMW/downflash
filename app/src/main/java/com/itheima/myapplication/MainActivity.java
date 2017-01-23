@@ -59,7 +59,7 @@ private RefreashListView listview;
         });
         listdatas = new ArrayList<>();
         for(int i=0;i<30;i++){
-            listdatas.add("这是一条数据:"+i);
+            listdatas.add("哈哈:"+i);
         }
         mAdapter = new MyAdapter();
         listview.setAdapter(mAdapter);
