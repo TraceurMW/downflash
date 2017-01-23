@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:padding="5dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+<FrameLayout
+    android:layout_height="50dp"
+    android:layout_width="50dp">
+    <ImageView
+        android:id="@+id/iv_arrow"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/common_listview_headview_red_arrow"/>
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/shape_progress"
+        android:layout_weight="1"/>
+</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textColor="#F00"/>
+        <TextView
+            android:id="@+id/tv_desc_last_refresh"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最后刷新时间:2017年1月16日19:21:37"
+            android:textSize="14sp"
+            android:textColor="#F666"/>
+    </LinearLayout>
+</LinearLayout>
